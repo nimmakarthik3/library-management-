@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Library Management - Books Page</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #1e40af;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .footer {
+            background-color: #1e40af;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="text-2xl font-bold">Saraswati Library</h1>
+            <nav>
+                <ul>
+                    <li><a href="mainpage">Home</a></li>
+                    <li><a href="books">Books</a></li>
+                    <li><a href="authors">Authors</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="/">logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Best Indian Books Across Different Genres</h2>
+        <section class="mb-8">
+            <h3>Classics &amp; Literary Fiction</h3>
+            <div class="grid">
+                <div class="card">
+                    <img alt="Book cover of Midnight’s Children by Salman Rushdie" src="https://storage.googleapis.com/a1aa/image/rzvy4CKNQctmqvSia_gDz2FN6U8bh2QNU_u7AGtSk0g.jpg"/>
+                    <h4>Midnight’s Children</h4>
+                    <p>by Salman Rushdie</p>
+                    <p>A magical realist take on India’s independence and partition.</p>
+                </div>
+                <div class="card">
+                    <img alt="Book cover of The God of Small Things by Arundhati Roy" src="https://storage.googleapis.com/a1aa/image/K_FQs_GTCkmZ2lTW1hdD7hUZOJXWTGB1CEig4KZ9NcY.jpg"/>
+                    <h4>The God of Small Things</h4>
+                    <p>by Arundhati Roy</p>
+                    <p>A poignant story of love, caste, and family in Kerala.</p>
+                </div>
+                               <div class="card">
+                    <img alt="Book cover of Train to Pakistan by Khushwant Singh" src="https://storage.googleapis.com/a1aa/image/xRqZnIge1_THYG7rIStvqEsrcxzPWN2DjQlPZI6dClE.jpg"/>
+                    <h4>Train to Pakistan</h4>
+                    <p>by Khushwant Singh</p>
+                    <p>A powerful novel on the horrors of Partition.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-8">
+            <h3>Modern &amp; Contemporary Fiction</h3>
+            <div class="grid">
+                <div class="card">
+                    <img alt="Book cover of The White Tiger by Aravind Adiga" src="https://storage.googleapis.com/a1aa/image/-vxXJjXC-Qvsvjr8RX8sDpUAasMhHR7YkabcTTWqRPY.jpg"/>
+                    <h4>The White Tiger</h4>
+                    <p>by Aravind Adiga</p>
+                    <p>A dark, witty critique of India’s class divide.</p>
+                </div>
+                <div class="card">
+                    <img alt="Book cover of The Palace of Illusions by Chitra Banerjee Divakaruni" src="https://storage.googleapis.com/a1aa/image/Xy3NcKSQLUyUsYojZmVKqQJALNzz_Ih3OXc1Z4xJj7I.jpg"/>
+                    <h4>The Palace of Illusions</h4>
+                    <p>by Chitra Banerjee Divakaruni</p>
+                    <p>A retelling of the Mahabharata from Draupadi’s perspective.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-8">
+            <h3>Historical &amp; Mythological Fiction</h3>
+            <div class="grid">
+                <div class="card">
+                    <img alt="Book cover of Jaya: An Illustrated Retelling of the Mahabharata by Devdutt Pattanaik" src="https://storage.googleapis.com/a1aa/image/bqeUdYWEJyTXL6p3WHA33OoGgQVs3A24pxtOIbSkp3A.jpg"/>
+                    <h4>Jaya: An Illustrated Retelling of the Mahabharata</h4>
+                    <p>by Devdutt Pattanaik</p>
+                    <p>A beautifully narrated and visualized version of the epic.</p>
+                </div>
+                <div class="card">
+                    <img alt="Book cover of A Suitable Boy by Vikram Seth" src="https://storage.googleapis.com/a1aa/image/dYlxQx6kk1momWl2nRwBLX9C_lWllRq5YRJzSQIww4M.jpg"/>
+                    <h4>A Suitable Boy</h4>
+                    <p>by Vikram Seth</p>
+                    <p>A sweeping tale of love, politics, and family in post-independence India.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-8">
+            <h3>Non-Fiction &amp; Memoirs</h3>
+            <div class="grid">
+                <div class="card">
+                    <img alt="Book cover of India After Gandhi by Ramachandra Guha" src="https://storage.googleapis.com/a1aa/image/Bi6dtnLJCtCOSFp-pD2NKyjCKiEzd8y-lPkIQ8DcM0o.jpg"/>
+                    <h4>India After Gandhi</h4>
+                    <p>by Ramachandra Guha</p>
+                    <p>An in-depth history of independent India.</p>
+                </div>
+                <div class="card">
+                    <img alt="Book cover of An Era of Darkness by Shashi Tharoor" src="https://storage.googleapis.com/a1aa/image/9oam6uCFJyo0PKRYqWl_7LvKQDfF5Rl2TfPrpAAm970.jpg"/>
+                    <h4>An Era of Darkness</h4>
+                    <p>by Shashi Tharoor</p>
+                    <p>A critical look at British colonial rule in India.</p>
+                </div>
+            </div>
+                       <div class="card">
+                    <img alt="Book cover of Autobiography of a Yogi by Paramahansa Yogananda" src="https://storage.googleapis.com/a1aa/image/PLVz1kT5b96Le-nz7h9WnC1OLUKLspUlAoVf43wjmJ4.jpg"/>
+                    <h4>Autobiography of a Yogi</h4>
+                    <p>by Paramahansa Yogananda</p>
+                    <p>A spiritual classic that influenced many global thinkers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Library Management. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

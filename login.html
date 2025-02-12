@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   <style>
+     body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        input {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 80%;
+            padding: 10px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkred;
+        }
+        .guest-button {
+            margin-top: 10px;
+            background: gray;
+        }
+        .guest-button:hover {
+            background: darkgray;
+        }
+        p {
+            margin-top: 15px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Books_and_Scroll_Ornament_with_Open_Book.png/263px-Books_and_Scroll_Ornament_with_Open_Book.png" alt="book" width="120px" height="100px" style="border-radius: 3px;">
+       <!-- login.html -->
+<form method="POST">
+    <label for="uname">Username:</label>
+    <input type="text" name="uname" id="uname" required>
+    
+    <label for="passw">Password:</label>
+    <input type="password" name="passw" id="passw" required>
+    
+    <button type="submit">Login</button>
+</form>
+        <button class="guest-button" onclick="window.location.href='/mainpage'">Guest Login</button>
+        <p>Don't have an account? <a href="register">Register here</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management App - Authors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #f8f3f3;
+        }
+        .author-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .author-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .author-card h2 {
+            font-size: 20px;
+            color: #007BFF;
+        }
+        .author-card p {
+            color: #555;
+        }
+        .recommendation {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+        .header {
+    background-color: #1e40af;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Saraswati Library</h1>
+            <nav>
+                <ul>
+                    <li><a href="/mainpage">Home</a></li>
+                    <li><a href="/books">Books</a></li>
+                    <li><a href="/authors">Authors</a></li>
+                    
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="/">logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Celebrated Indian Authors</h1>
+
+    <div class="author-container">
+        <div class="author-card">
+            <h2>Rabindranath Tagore</h2>
+            <p><strong>Notable Works:</strong> Gitanjali, The Home and the World</p>
+            <p>Nobel Laureate, poet, novelist, and playwright; known for his profound literary contributions.</p>
+        </div>
+        <div class="author-card">
+            <h2>R.K. Narayan</h2>
+            <p><strong>Notable Works:</strong> Malgudi Days, Swami and Friends</p>
+            <p>Famous for his simple yet profound storytelling that captures the essence of Indian life.</p>
+        </div>
+        <div class="author-card">
+            <h2>Salman Rushdie</h2>
+            <p><strong>Notable Works:</strong> Midnight’s Children, The Satanic Verses</p>
+            <p>Notable for blending magical realism with historical themes in his narratives.</p>
+        </div>
+        <div class="author-card">
+            <h2>Arundhati Roy</h2>
+            <p><strong>Notable Works:</strong> The God of Small Things</p>
+            <p>Won the Booker Prize; known for her activism and socio-political essays.</p>
+        </div>
+        <div class="author-card">
+            <h2>Vikram Seth</h2>
+            <p><strong>Notable Works:</strong> A Suitable Boy</p>
+            <p>Acclaimed for his sprawling tale of post-independence India.</p>
+        </div>
+        <div class="author-card">
+            <h2>Ruskin Bond</h2>
+            <p><strong>Notable Works:</strong> The Blue Umbrella, Our Trees Still Grow in Dehra</p>
+            <p>A beloved author of short stories and novels, capturing the beauty of nature.</p>
+        </div>
+        <div class="author-card">
+            <h2>Khushwant Singh</h2>
+            <p><strong>Notable Works:</strong> Train to Pakistan</p>
+            <p>Renowned for his powerful narrative on the Partition of India.</p>
+        </div>
+        <div class="author-card">
+            <h2>Amitav Ghosh</h2>
+            <p><strong>Notable Works:</strong> The Ibis Trilogy, The Shadow Lines</p>
+            <p>Known for focusing on colonial history and migration in his works.</p>
+        </div>
+        <div class="author-card">
+            <h2>Chetan Bhagat</h2>
+            <p><strong>Notable Works:</strong> Five Point Someone, 2 States</p>
+            <p>A modern writer appealing to young readers with relatable themes.</p>
+        </div>
+        <div class="author-card">
+            <h2>Shashi Tharoor</h2>
+            <p><strong>Notable Works:</strong> An Era of Darkness, The Great Indian Novel</p>
+            <p>A historian and politician known for his insightful analysis of India's history and politics.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2023 Library Management. All rights reserved to karthik.</p>
+    </footer>
+
+
+</body>
+</html>

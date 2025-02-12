@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #1e40af;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.news-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.footer {
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+    </style>
+</head>
+<body class="font-roboto bg-gray-100">
+
+   
+    <header class="header">
+        <div class="container">
+            <h1>Saraswati Library</h1>
+            <nav>
+                <ul>
+                    <li><a href="/mainpage">Home</a></li>
+                    <li><a href="/books">Books</a></li>
+                    <li><a href="/authors">Authors</a></li>
+                    
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="/">logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <main class="container">
+        
+        <section>
+            <h2>Featured Books</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/1vgDB1Xdekj6Q24fz5J_86jiNmG2KgCRD8jbFLBbAr0.jpg" alt="The Great Gatsby">
+                    <h3>The Great Gatsby</h3>
+                    <p>by F. Scott Fitzgerald</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/yBb_hb4uhlHjX-pC4ZlO2ypXhh8VLai-kfLr4wALeA4.jpg" alt="To Kill a Mockingbird">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>by Harper Lee</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/IrA0FLIA4hU75wGJUccy9tWkpG5FuruZz9fCMnUKqdc.jpg" alt="1984">
+                    <h3>1984</h3>
+                    <p>by George Orwell</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section>
+            <h2>Latest News</h2>
+            <div class="news">
+                <div class="news-card">
+                    <h3>Library Renovation Completed</h3>
+                    <p>We are excited to announce that the library renovation has been completed. Come and see our new look!</p>
+                </div>
+                <div class="news-card">
+                    <h3>New Arrivals: Summer 2023</h3>
+                    <p>Check out the latest additions to our collection, including bestsellers and new releases.</p>
+                </div>
+               
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    
+    <footer class="footer">
+        <p>© 2023 Library Management. All rights reserved to karthik.</p>
+    </footer>
+
+</body>
+</html>
